@@ -1,0 +1,183 @@
+{% comment %} {% extends "base.html" %} {% endcomment %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/for_proto.css' %}">
+
+
+{% block content %}
+
+{% endblock content %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khidme Site Managers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="min-h-screen py-12 px-4 sm:px-6 lg:px-8 space-y-16  from-gray-50 to-gray-100">
+
+    <!-- Welcome Section -->
+    <div class="welcome-text max-w-4xl mx-auto">
+        <h1 class="text-3xl md:text-4xl font-bold mb-4" style="color: white;">
+            Welcome, we are very happy to have you visit our website
+        </h1>
+    </div>
+
+            
+
+    <!--Zid bih hdaya -->
+    <div class="max-w-4xl mx-auto profile-card bg-red rounded-2xl overflow-hidden">
+        <div class="p-8 md:p-12 relative">
+            <!-- Profile Image -->
+            <div class="absolute top-8 right-8 w-20 h-20 md:w-28 md:h-28 rounded-full overflow-hidden border-[3px] border-white profile-img z-10">
+                <img src="{%static 'images/zed.jpeg' %}" 
+                     alt="med mahmoud hdaya"
+                     class="w-full h-full object-cover">
+            </div>
+            
+            <!-- Header with animated elements -->
+            <div class="mr-24 md:mr-32 relative">
+                <!-- Animated underline -->
+                <div class="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full" style="animation: widthGrow 1.2s ease-out forwards 0.6s"></div>
+                
+                <!-- Name with gradient and reveal animation -->
+                <h1 class="text-3xl md:text-4xl font-bold mb-2 text-gradient zed-gradient" style="animation: textReveal 1.5s ease-out forwards">
+                    Hello, I'm Med mahmoud Hdaya
+                </h1>
+                
+                <!-- Title with fade-in -->
+                <h2 class="text-xl md:text-2xl font-semibold text-gray-400" style="animation: slideIn 0.8s ease-out forwards 0.8s; opacity: 0">
+                    Full stack developper
+                </h2>
+            </div>
+            <!-- Social icons  -->
+            <div class="flex space-x-3 mt-3" style="animation: slideIn 0.8s ease-out forwards 0.9s; opacity: 0" >
+                <span class="text-gray-200 hover:text-blue-400 transition-colors duration-300">
+                    <a href="https://www.facebook.com/share/1H4SwskBFX/?mibextid=wwXIfr" target="_blank" class="text-xl">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </span>
+                <span class="text-gray-200 hover:text-green-400 transition-colors duration-300">
+                    <a href="https://wa.me/+22241092085" target="_blank" class="text-xl">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </span>
+                <span class="text-gray-200 hover:text-blue-500 transition-colors duration-300">
+                    <a href="https://www.linkedin.com/in/med-mahmoud-hdaya-985604342?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="text-xl">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </span>
+            </div>
+            
+            <div class="divider my-8"></div>
+            
+            
+            <!-- Content section -->
+            <div class="mb-8">
+                <h3 class="text-xl md:text-2xl font-bold text-gray-300 mb-4" style="animation: slideIn 0.8s ease-out forwards 1s; opacity: 0">
+                    Manager and Developper at khidma mauritania
+                </h3>
+                <h3 class="text-xl md:text-xl text-gray-400 mb-4" style="animation: slideIn 0.8s ease-out forwards 1s; opacity: 0">
+                    Data Engineering and Machine Learning (DEML) student at the Higher Institute of Digitalization, and a graduate of ISCAE.
+                </h3>
+                <p class="text-gray-400 leading-relaxed text-base md:text-lg" style="animation: slideIn 0.8s ease-out forwards 1.2s; opacity: 0">
+                    I am a software developer and a recent graduate with expertise in <span class="font-semibold text-amber-600">PHP</span> and the <span class="font-semibold text-amber-400">Laravel</span> framework, along with related tools in the TALL stack. I am passionate about <span class="font-semibold text-amber-1X00">building efficient</span>, user-friendly software and aspire to become a highly skilled software developer.
+                </p>
+            </div>
+            
+            <!-- Skills tags with  -->
+            <div class="flex flex-wrap gap-3 mt-8">
+                <span class="skill-tag px-4 py-1.5 bg-indigo-50 text-indigo-700 rounded-full text-sm font-medium" style="animation: slideIn 0.6s ease-out forwards 1.4s; opacity: 0">Java script</span>
+                <span class="skill-tag px-4 py-1.5 bg-purple-50 text-purple-700 rounded-full text-sm font-medium" style="animation: slideIn 0.6s ease-out forwards 1.5s; opacity: 0">Tailwind CSS</span>
+                <span class="skill-tag px-4 py-1.5 bg-blue-50 text-blue-700 rounded-full text-sm font-medium" style="animation: slideIn 0.6s ease-out forwards 1.6s; opacity: 0">php</span>
+                <span class="skill-tag px-4 py-1.5 bg-emerald-50 text-emerald-700 rounded-full text-sm font-medium" style="animation: slideIn 0.6s ease-out forwards 1.7s; opacity: 0">laravel</span>
+                <span class="skill-tag px-4 py-1.5 bg-amber-50 text-amber-700 rounded-full text-sm font-medium" style="animation: slideIn 0.6s ease-out forwards 1.8s; opacity: 0">mysql</span>
+                <span class="skill-tag px-4 py-1.5 bg-red-50 text-red-700 rounded-full text-sm font-medium" style="animation: slideIn 0.6s ease-out forwards 1.9s; opacity: 0">python</span>
+                <span class="skill-tag px-4 py-1.5 bg-red-50 text-red-600 rounded-full text-sm font-medium" style="animation: slideIn 0.6s ease-out forwards 1.9s; opacity: 0">Flask</span>
+                <span class="skill-tag px-4 py-1.5 bg-red-50 text-red-800 rounded-full text-sm font-medium" style="animation: slideIn 0.6s ease-out forwards 1.9s; opacity: 0">java</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Me -->
+    <div id="me" class="max-w-4xl mx-auto profile-card bg-dark rounded-2xl overflow-hidden hidden-section">
+        <div class="p-8 md:p-12">
+            <!-- Profile Image -->
+            <div class="absolute top-8 right-8 w-20 h-20 md:w-28 md:h-28 rounded-full overflow-hidden border-[3px] border-white profile-img z-10">
+                <img src="{%static 'images/med.jpeg' %}" 
+                     alt="med mahmoud tedih"
+                     class="w-full h-full object-cover">
+            </div>
+            
+            <!-- Header -->
+            <div class="mr-24 md:mr-32 relative">
+                <div class="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-amber-500 to-red-500 rounded-full"></div>
+                <h1 class="text-3xl md:text-4xl font-bold mb-2 text-gradient med-gradient">
+                    Hello, I'm Med mahmoud Tedih
+                </h1>
+                <h2 class="text-xl md:text-2xl font-semibold text-gray-400" style="opacity: 0">
+                    Full stack developper
+                </h2>
+            </div>
+            <!-- Social icons  -->
+            <div class="flex space-x-3 mt-3" style="animation: slideIn 0.8s ease-out forwards 0.9s; opacity: 0" >
+                <span class="text-gray-200 hover:text-blue-400 transition-colors duration-300">
+                    <a href="https://www.facebook.com/share/1A9K9g1b8i/?mibextid=wwXIfr" target="_blank" class="text-xl">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </span>
+                <span class="text-gray-200 hover:text-green-400 transition-colors duration-300">
+                    <a href="https://wa.me/+22242038210" target="_blank" class="text-xl">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </span>
+                <span class="text-gray-200 hover:text-blue-500 transition-colors duration-300">
+                    <a href="https://www.linkedin.com/in/med-mahmoud-tedih-aa29992a4" target="_blank" class="text-xl">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </span>
+            </div>
+
+            <div class="divider my-8"></div>
+            
+            <!-- Content section -->
+            <div class="mb-8">
+                <h3 class="text-xl md:text-2xl font-bold text-gray-300 mb-4" style="opacity: 0">
+                    Manager and Developper at khidma mauritania
+                </h3>
+                <h4 class="text-xl md:text-xl text-gray-400 mb-4" style="animation: slideIn 0.8s ease-out forwards 1s; opacity: 0">
+                    A student of Computer Engineering and Systems Security at Mohammed V University in Rabat, Kingdom of Morocco, and a graduate of ISCAE.
+                </h4>
+                <p class="text-gray-400 leading-relaxed text-base md:text-lg" style="opacity: 0">
+                    Professional web developer with extensive experience in developing modern web applications using technologies such as <span class="font-semibold text-amber-600">Tailwind CSS</span>, <span class="font-semibold text-blue-700">React</span>, and <span class="font-semibold text-amber-400">Django</span> . I have a strong passion for <span class="font-semibold text-amber-600">cyber security</span> and <span class="font-semibold text-amber-600"> encryption</span>, and I always strive to discover new tools and technologies. I believe in the importance of teamwork and enjoy collaborating with diverse teams to achieve common goals
+                </p>
+            </div>
+            
+            <!-- Skills tags -->
+            <div class="flex flex-wrap gap-3 mt-8">
+                <span class="skill-tag px-4 py-1.5 bg-amber-50 text-amber-700 rounded-full text-sm font-medium" style="opacity: 0">Python</span>
+                <span class="skill-tag px-4 py-1.5 bg-red-50 text-red-700 rounded-full text-sm font-medium" style="opacity: 0">Django</span>
+                <span class="skill-tag px-4 py-1.5 bg-blue-50 text-blue-700 rounded-full text-sm font-medium" style="opacity: 0">java script</span>
+                <span class="skill-tag px-4 py-1.5 bg-emerald-50 text-emerald-700 rounded-full text-sm font-medium" style="opacity: 0">React</span>
+                <span class="skill-tag px-4 py-1.5 bg-purple-50 text-purple-700 rounded-full text-sm font-medium" style="opacity: 0">Talwind css</span>
+                <span class="skill-tag px-4 py-1.5 bg-gray-50 text-gray-700 rounded-full text-sm font-medium" style="opacity: 0">git</span>
+                <span class="skill-tag px-4 py-1.5 bg-gray-50 text-purpele-100 rounded-full text-sm font-medium" style="opacity: 0">github</span>
+                <span class="skill-tag px-4 py-1.5 bg-amber-50 text-amber-900 rounded-full text-sm font-medium" style="opacity: 0">php</span>
+                <span class="skill-tag px-4 py-1.5 bg-amber-50 text-amber-700 rounded-full text-sm font-medium" style="opacity: 0">laravel</span>
+                <span class="skill-tag px-4 py-1.5 bg-amber-50 text-amber-700 rounded-full text-sm font-medium" style="opacity: 0">MySQL</span>
+                <span class="skill-tag px-4 py-1.5 bg-amber-50 text-amber-700 rounded-full text-sm font-medium" style="opacity: 0">SQLITE</span>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <script src="{% static 'js/proto.js' %}"></script>
+</body>
+</html>
+
